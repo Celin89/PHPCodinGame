@@ -2,7 +2,6 @@
 
 function calc($array, $n1, $n2)
 {
-    
     if ($n2 <= count($array) && $n1 <= $n2 && $n1 >= 0)
     {
         $somme = array_sum($array);
@@ -12,10 +11,8 @@ function calc($array, $n1, $n2)
         $somme = $n1+$n2 ;
     }
 
-    echo $somme;
-
+   echo $somme;
    
-    
 }
 
 $array = [1, 2, 3];
