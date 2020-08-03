@@ -9,7 +9,10 @@ class Change
 
 function OptimalChange(){
 
-    
+    if($coin2=0){
+
+    }
+
 
 }
 
