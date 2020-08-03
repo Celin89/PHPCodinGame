@@ -4,7 +4,8 @@ function simple($mNbr)
 {
     $nbr=(String)$mNbr;
     $cumul=$mNbr;
-    for ($i=0;$i<strlen($nbr); $i++) $cumul+=substr($nbr, $i,1);
+    for ($i=0;$i<strlen($nbr); $i++) $cumul+=substr($nbr,$i,1);
+    
     return $cumul;
 
 }
@@ -20,10 +21,10 @@ function computeJoinPoint($s1, $s2)
     while($s1 != $s2)
     {
     if($s1 < $s2)
-      {
+     {
          $s1 = simple($s1);
-      }
-      else 
+     }
+     else 
       {
          $s2 = simple($s2);
       }

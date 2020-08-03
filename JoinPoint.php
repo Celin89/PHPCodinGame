@@ -22,7 +22,7 @@ while(($mS1!=$mS2) && ($i<2000000))
 }
 $mS1=471;
 $mS2=480;
-computeJoin($mS1,$mS2);
+computeJoinPoint($mS1,$mS2);
 
 
 
