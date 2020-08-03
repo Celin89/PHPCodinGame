@@ -3,12 +3,9 @@
 function calc($array, $n1, $n2)
 {
     
-  
     if ($n2 <= count($array) && $n1 <= $n2 && $n1 >= 0)
     {
-        
         $somme = array_sum($array);
-         
     }
 
     else {
