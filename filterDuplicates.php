@@ -17,14 +17,11 @@ $tab[$j++]=$data[$i];
 }
 }
 
-print_r($tab);
+return $tab;
 }
-
 
 $tab= array(1,2,3,4,2,1);
 doubons($tab);
  
-
-
 ?>
 
