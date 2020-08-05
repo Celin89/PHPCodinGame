@@ -8,9 +8,8 @@ class Change {
 
 function optimalChange($s) 
 {
-    // exceptions
+
     if ($s <= 1 || $s === 3 || $s > 2 ** 31 - 1) {
-        // should throw an exception or check if $m instanceof Change in the test code
         return null;
     }
     

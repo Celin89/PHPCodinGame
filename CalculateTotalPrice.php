@@ -2,18 +2,21 @@
 
 function calculateTotalPrice(array $price , $discount){
 
-    $sum = array_sum($price);
-     
-    $prod= (max($price)*$discount)/100 ;
+ $sum = 0;
+ rsort($price);
+ for($i=0; $i<count($price); $i++ )
+     {
+        $sum = $sum + $price[$i];
+        $rem = $discount/100 ;
 
-    $total= $sum - $prod;
-
-    echo  $total;
-     
-
-
+        $total= $sum - $rem*$price[0];
+     }
+     echo  $total;
 }
+ 
 
-$discount= 25;
-$price= array(1,2,3,4,2,1);
+$discount= 10;
+$price= array(1,2,3,100,2,1);
 calculateTotalPrice( $price , $discount);
+
+
