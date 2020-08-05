@@ -1,7 +1,10 @@
 <?php
 
-function calculateTotalPrice(array $price , $discount){
+$discount= 10;
+$price= array(7,13,3,8,2,1);
+calculateTotalPrice( $price , $discount);
 
+function calculateTotalPrice(array $price , $discount){
  $sum = 0;
  rsort($price);
  for($i=0; $i<count($price); $i++ )
@@ -11,12 +14,11 @@ function calculateTotalPrice(array $price , $discount){
 
         $total= $sum - $rem*$price[0];
      }
-     echo  $total;
+     return  $total;
 }
  
+?>
 
-$discount= 10;
-$price= array(1,2,3,100,2,1);
-calculateTotalPrice( $price , $discount);
+
 
 
