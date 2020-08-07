@@ -1,5 +1,8 @@
 <?php
 
+$numbers = array(-1,9,14,19,1);
+findSmallestInterval($numbers);
+
 function findSmallestInterval($numbers)
 {
     rsort($numbers);
@@ -12,12 +15,9 @@ function findSmallestInterval($numbers)
            $small= $diff;
         }      
     }
-   return $small;
-     
+   return $small;    
 } 
 
-$numbers = array(-1,9,14,19,1);
-findSmallestInterval($numbers);
 
 
 
