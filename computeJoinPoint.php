@@ -32,3 +32,7 @@ function computeJoinPoint($s1, $s2)
 
      return $s1;
 }
+
+$s1=471;
+$s2=480;
+computeJoinPoint($s1, $s2); 
