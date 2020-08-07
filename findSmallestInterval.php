@@ -12,7 +12,7 @@ function findSmallestInterval($numbers)
            $small= $diff;
         }      
     }
-   echo $small;
+   return $small;
      
 } 
 
