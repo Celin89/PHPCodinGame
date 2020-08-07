@@ -8,10 +8,9 @@ class Change {
 
 function optimalChange($s) 
 {
-
     if ($s <= 1 || $s === 3 || $s > 2 ** 31 - 1) {
-        return null;
-    }
+    return null;
+}
     
     $lastNumber = (int)substr($s, -1);
     
@@ -22,13 +21,14 @@ function optimalChange($s)
     $change->bill10 = $firstPart / 10;
 
     if ($lastNumber === 1) { 
-        if ($firstPart >= 10) {
+        if ($firstPart >= 10) 
+        {
             $change->bill10--;
         }
         $change->bill5 = 1;
         $change->coin2 = 3;
     } else if ($lastNumber % 2 === 0) {
-        // 2 | 4 | 6 | 8
+        
         $change->coin2 = $lastNumber / 2;
     } else if ($lastNumber === 3) {
         if ($firstPart >= 10) {
@@ -37,14 +37,12 @@ function optimalChange($s)
         $change->bill5 = 1;
         $change->coin2 = 4;
     } else {
-        // 5 | 7 | 9
+        
         $change->bill5 = 1;
         $change->coin2 = ($lastNumber - 5) / 2;
     }
     
     return $change;
 }
-
-var_dump(optimalChange(8));
 
 ?>
