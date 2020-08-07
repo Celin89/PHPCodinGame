@@ -1,5 +1,8 @@
 <?php
 
+$tab= array(7,3,6,4,3,3,4,9);
+filterDuplicates($tab);
+
 function filterDuplicates(array $data)
 {
 
@@ -29,8 +32,7 @@ if($add)
        return $filter ;
 }
 
-$tab= array(7,3,6,4,3,3,4,9);
-filterDuplicates($tab);
+
 
 
 
