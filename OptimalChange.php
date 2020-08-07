@@ -26,6 +26,7 @@ function optimalChange ($s){
     return array("bill10"=>$bill10,"bill5"=>$bill5,"coin2"=>$coin2);
 }
  
-print_r (optimalChange(20));
+optimalChange(20);
+
 
 
